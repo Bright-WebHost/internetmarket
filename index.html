@@ -44,7 +44,7 @@
                             <div class="subcribe-form mt-4 pt-2">
                                 <form id="subscribe-form">
                                     <input type="email" name="email" id="subscribeEmail" class="bg-white opacity-6 rounded shadow" required placeholder="Enter your email">
-                                    <button type="submit" class="btn btn-primary">Notify Me</button>
+                                    <button type="submit" class="btn btn-primary">Send</button>
                                 </form>
                             </div>
 
@@ -83,7 +83,7 @@
 
             emailjs.sendForm('service_80p79si', 'template_9vc38hh', this)
             .then(function (response) {
-                alert('✅ Thank you! You will be notified.');
+                alert('✅ Thank you! ');
                 document.getElementById("subscribe-form").reset();
             }, function (error) {
                 alert('❌ Oops... something went wrong.');
